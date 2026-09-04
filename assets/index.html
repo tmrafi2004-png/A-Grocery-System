@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon" />
+  <title>ECOBAZAER</title>
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <!--GOOGLE FONTS END-->
+  <!--FONT AWASOME CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--BOOTSTRAP CSS-->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!--CUSTOM CSS-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between header-content">
+        <div class="location_box">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <p>Store Location: New Market, Chattogram, Bangladesh</p>
+        </div>
+        <div class="navigation_box">
+          <ul class="d-flex align-items-center">
+            <li>
+              <button class="utility-button" type="button"
+                data-notice="Language selector is ready to connect to your preferred language service.">
+                Eng <span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="utility-button" type="button"
+                data-notice="Currency selector is ready to connect to your pricing service.">
+                USD <span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+              </button>
+            </li>
+            <li>
+              <button class="utility-button" type="button"
+                data-notice="Currency selector is ready to connect to your pricing service.">
+                BDT <span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+              </button>
+            </li>
+            <li class="utility-separator" aria-hidden="true">|</li>
+            <li><a href="login.html"><button class="utility-button" type="button"
+                  data-notice="Sign in is not available in this static demo.">Log In / Sign Up</button></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- Header END -->
+
+  <p id="page-status" class="visually-hidden" role="status" aria-live="polite"></p>
+  <main id="main-content">
+
+    <!-- NAVBAR -->
+    <section id="navbar">
+      <div class="container mt-3">
+        <div class="row align-items-center justify-content-between">
+          <!-- <div class="col d-lg-none">
+                    <span><i class="fa-solid fa-chart-simple"></i></span>
+                </div> -->
+          <div class="col-lg-2 col">
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample" class="menu-toggle d-lg-none" aria-label="Open navigation menu"><i
+                class="fa-solid fa-bars-staggered" aria-hidden="true"></i></button>
+            <a href="#home" aria-label="Ecobazar home"><img src="./assets/images/Logo.png" alt="Ecobazar"></a>
+
+          </div>
+          <div class="col-lg-5 d-none d-lg-block search">
+            <form class="btn-group" data-product-search role="search">
+              <span class="search_icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i></span>
+              <label class="visually-hidden" for="desktop-search">Search products</label>
+              <input id="desktop-search" type="search" name="q" placeholder="Search products" autocomplete="off">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+          <div class="col-lg-3 col">
+            <div class="icons d-flex align-items-center justify-content-center">
+              <div class="one">
+                <a href="login.html" style="color: black;">
+                  <button class="icon-button first" type="button" data-header-favorite aria-label="View wishlist"> <i
+                      class="fa-regular fa-heart heart" aria-hidden="true"></i></button></a>
+              </div>
+              <div class="two d-flex align-items-center">
+                <a href="login.html" style="color: black;">
+                  <button class="icon-button icon_parent first" type="button" data-view-cart
+                    aria-label="View shopping cart"><i class="fa-solid fa-bag-shopping card_shop"
+                      aria-hidden="true"></i>
+                    <span class="count">2</span>
+                  </button>
+                  <div class="contains">
+                </a>
+              </div>
+
+            </div>
+
+
+            <div class="two d-flex align-items-center">
+              <a href="login.html" style="color: inherit; text-decoration: none;" aria-label="View Orders">
+                <button class="icon-button icon_parent first" type="button" data-view-orders>
+                  <i class="fa-solid fa-box profile_icon" aria-hidden="true"></i>
+                </button>
+              </a>
+              <div class="contains">
+
+              </div>
+            </div>
+
+
+            <div class="two d-flex align-items-center">
+              <a href="login.html" style="color: black;"><button class="icon-button icon_parent first" type="button"
+                  data-view-profile aria-label="View profile">
+                  <i class="fa-regular fa-user profile_icon" aria-hidden="true"></i>
+                </button>
+                <div class="contains">
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      </div>
+
+
+      <div class="row mt-3">
+        <div class="col-12 d-lg-none search">
+          <form class="btn-group" data-product-search role="search">
+            <span class="search_icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <label class="visually-hidden" for="mobile-search">Search products</label>
+            <input id="mobile-search" type="search" name="q" placeholder="Search products" autocomplete="off">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- NAVBAR END -->
+    <!-- NAVICATION MENU -->
+    <nav class="navigation_menu  d-none d-lg-block">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <ul>
+            <li>
+              <a href="#home">Home</i></a>
+            </li>
+            <li>
+              <a href="#popular-products">Shop <span><i class="fa-solid fa-chevron-down"></i></span></a>
+              <ul class="dropdown">
+                <li><a href="#hot-deals">Fruit & Vegetables</a></li>
+                <li><a href="#popular-products">Meat & Fish</a></li>
+                <li><a href="#popular">Bread & Bakery</a></li>
+                <li><a href="#featured-products">Beauty & Health</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#featured-products">Pages <span><i class="fa-solid fa-chevron-down"></i></span></a>
+              <ul class="dropdown">
+                <li><a href="#popular">Popular Categories</a></li>
+                <li><a href="#popular-products">Popular Products</a></li>
+                <li><a href="#hot-deals">Hot Deals</a></li>
+                <li><a href="#featured-products">Featured Products</a></li>
+                <li><a href="#latest">Latest News</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#about-us">About Us</a>
+            </li>
+            <li>
+              <a href="#contact-us">Contact Us</a>
+            </li>
+            <li>
+              <a href="help.html">Help Center</a>
+            </li>
+          </ul>
+          <div class="call">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <span> (+880) 1594753799</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            Button with data-bs-target
+          </button> -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <img class="img-fluid" src="./assets/images/Logo.png" alt="Ecobazar">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <ul>
+              <li class="mb-2">
+                <a class="text-decoration-none text-body-emphasis" href="#home">Home </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none text-body-emphasis" href="#popular-products">Shop </a>
+              </li>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none text-body-emphasis" href="#featured-products">Pages </a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none text-body-emphasis" href="#about-us">About Us</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none text-body-emphasis" href="#contact-us">Contact Us</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-decoration-none text-body-emphasis" href="help.html">Help Center</a>
+              </li>
+            </ul>
+            <div class="call">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <span> (+880) 1594753799</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--NAVICATION MENU  END -->
+
+    <!-- Banner -->
+    <section id="home">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-lg-8 ">
+            <a href="#featured-products" aria-label="Shop featured products"><img class="img-fluid"
+                src="./assets/images/Bannar Big.png" alt="Fresh groceries promotion">
+            </a>
+          </div>
+          <div class="col-lg-4 mt-3 mt-lg-0">
+            <div class="col-lg-12 ">
+              <a href="#hot-deals" class="banner-link"><img class="img-fluid" src="./assets/images/Bannar.png"
+                  alt="Shop hot deals">
+              </a>
+            </div>
+            <div class="col-lg-12">
+              <a href="#popular" class="banner-link"><img class="img-fluid" src="./assets/images/Bannar (1).png"
+                  alt="Browse popular categories">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner -->
+    <!-- SERVICE -->
+    <section id="service">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 col-6 service_box">
+            <div><i class="fa-solid fa-truck-fast"></i></div>
+            <div>
+              <h3>Free Shipping</h3>
+              <p>Free shipping on all your order</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 service_box">
+            <div><i class="fa-solid fa-headphones-simple"></i></div>
+            <div>
+              <h3>Customer Support 24/7</h3>
+              <p>Instant access to Support</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 service_box">
+            <div><i class="fa-solid fa-bag-shopping"></i></div>
+            <div>
+              <h3>100% Secure Payment</h3>
+              <p>We ensure your money is save</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 service_box">
+            <div><i class="fa-solid fa-box"></i></div>
+            <div>
+              <h3>Money-Back Guarantee</h3>
+              <p>30 Days Money-Back Guarantee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICE END -->
+
+    <!-- POPULAR CATAGORIES -->
+    <section id="popular">
+      <div class="container">
+        <div class="popular_header">
+          <h1>Popular Categories</h1>
+          <button>
+            View All
+            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+          </button>
+        </div>
+        <div class="row mt-5 g-3 popular-grid mx-auto">
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular1.png" alt="Fresh Fruit" />
+            <h4>Fresh Fruit</h4>
+          </div>
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular2.png" alt="Fresh Vegetables" />
+            <h4>Fresh Vegetables</h4>
+          </div>
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular3.png" alt="Meat and Fish" />
+            <h4>Meat & Fish</h4>
+          </div>
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular4.png" alt="Snacks" />
+            <h4>Snacks</h4>
+          </div>
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular5.png" alt="Beverages" />
+            <h4>Beverages</h4>
+          </div>
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular6.png" alt="Beauty and Health" />
+            <h4>Beauty & Health</h4>
+          </div>
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular7.png" alt="Bread and Bakery" />
+            <h4>Bread & Bakery</h4>
+          </div>
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular8.png" alt="Baking Needs" />
+            <h4>Baking Needs</h4>
+          </div>
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular9.png" alt="Cooking" />
+            <h4>Cooking</h4>
+          </div>
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular10.png" alt="Diabetic Food" />
+            <h4>Diabetic Food</h4>
+          </div>
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular11.png" alt="Dish Detergents" />
+            <h4>Dish Detergents</h4>
+          </div>
+          <div class="col-lg-2 popular_box">
+            <img src="./assets/images/popular12.png" alt="Oil" />
+            <h4>Oil</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR CATAGORIES END -->
+
+
+    <!-- POPULAR PRODUCTS -->
+    <section id="popular-products" class="product-section">
+      <div class="container">
+        <div class="popular_header">
+          <h1>Popular Products</h1>
+          <button>
+            View All
+            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+          </button>
+        </div>
+        <div class="row mt-5 g-3 row-cols-lg-5 row-cols-md-3 row-cols-2">
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products1.png" alt="Green Apple" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Green Apple</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$5/৳618</span>
+                    <span class="blur">$9.99/৳1113</span>
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="sale">
+              <p>Sale 50%</p>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products2.png" alt="Fresh Indian Malta" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Fresh Indian Malta</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$11.00/৳1361</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products3.png" alt="Chinese cabbage" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Chinese cabbage</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$0.65/৳80</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products4.png" alt="Green Lettuce" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Green Lettuce</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$1.23/৳450</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products5.png" alt="Eggplant" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Eggplant</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$0.84/৳100</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products6.png" alt="Big Potatoes" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Big Potatoes</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$0.40/৳30</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products7.png" alt="Corn" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Corn</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$1.85/৳220</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products8.png" alt="Fresh Cauliflower" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Fresh Cauliflower</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$0.65/৳80</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products9.png" alt="Green Capsicum" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Green Capsicum</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$3.60/৳430</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="sale">
+              <p>Sale 50%</p>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products10.png" alt="Green Chili" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Green Chili</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$2.68/৳320</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- POPULAR PRODUCTS END -->
+
+    <!-- SPECIAL -->
+    <section id="special">
+      <div class="container mx-auto">
+        <div class="row row-cols-lg-3 row-cols-md-2 justify-content-between mx-auto">
+          <div class="special_box_1">
+            <div class="img-1">
+              <img src="./assets/images/special1.png" alt="Sale of the month promotion">
+            </div>
+            <div class="content-1">
+              <h5>Best Deals</h5>
+              <h1>Sale of the Month</h1>
+              <div class="time d-flex align-items-center justify-content-around">
+                <span>
+                  <span class="">00 <strong class="ps-4">:</strong> </span>
+                  <p>DAYS</p>
+                </span>
+                <span>
+                  <span>02 <strong class="ps-4">:</strong> </span>
+                  <p>HOURS</p>
+                </span>
+                <span>
+                  <span>18 <strong class="ps-4">:</strong></span>
+                  <p>MINS</p>
+                </span>
+                <span><span>46</span>
+                  <p>SECS</p>
+                </span>
+              </div>
+              <button type="button" class="d-flex align-items-center justify-content-center" data-shop-now>
+                Shop now
+                <span class="ps-1"><i class="fa-solid fa-arrow-right-long"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="special_box_2">
+            <div class="img">
+              <img src="./assets/images/special2.png" alt="Low-fat meat promotion">
+            </div>
+            <div class="content">
+              <h5>85% Fat Free</h5>
+              <h1>Low-Fat Meat</h1>
+              <div class="py-3">
+                <span>Started at</span>
+                <span class="start">$79.99</span>
+              </div>
+              <button type="button" class="d-flex align-items-center justify-content-center" data-shop-now>
+                Shop now
+                <span class="ps-1"><i class="fa-solid fa-arrow-right-long"></i></span>
+              </button>
+            </div>
+
+          </div>
+
+
+
+          <div class="special_box_3">
+            <div class="img">
+              <img src="./assets/images/special3.png" alt="Fresh fruit promotion">
+            </div>
+            <div class="content">
+              <h5>Summer Sale</h5>
+              <h1>100% Fresh Fruit</h1>
+              <div class="py-3">
+                <span>Up to</span>
+                <span class="up">64% OFF</span>
+              </div>
+              <button type="button" class="d-flex align-items-center justify-content-center" data-shop-now>
+                Shop now
+                <span class="ps-1"><i class="fa-solid fa-arrow-right-long"></i></span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SPECIAL END-->
+
+    <!-- HOT DEALS-->
+    <section id="hot-deals" class="product-section">
+      <div class="container">
+        <div class="popular_header">
+          <h1>Hot Deals</h1>
+          <button>
+            View All
+            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+          </button>
+        </div>
+        <div class="row mt-5 g-3 row-cols-lg-6 row-cols-md-3 row-cols-2">
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/Image.png" alt="Green Apple" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Green Apple</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$5/৳618</span>
+                    <span class="blur">$9.99/৳1113</span>
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="sale bg-primary">
+              <p>Best Sale</p>
+
+            </div>
+
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products3.png" alt="Chinese cabbage" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Chinese cabbage</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$0.65/৳80</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products4.png" alt="Green Lettuce" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Green Lettuce</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$1.23/৳450</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products5.png" alt="Eggplant" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Eggplant</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$0.84/৳100</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products8.png" alt="Fresh Cauliflower" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Fresh Cauliflower</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$0.65/৳80</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products9.png" alt="Green Capsicum" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Green Capsicum</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$2.60/৳321.82</span>
+                    <span class="blur">$3.60/৳430</span>
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="sale">
+              <p>Sale 50%</p>
+            </div>
+
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products10.png" alt="Green Chili" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Green Chili</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$2.68/৳320</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products6.png" alt="Big Potatoes" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Big Potatoes</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$0.40/৳30</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products7.png" alt="Corn" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Corn</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$1.85/৳220</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/Image (7).png" alt="Red Chili" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Red Chili</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$5.75/৳680</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/Image (8).png" alt="Red Tomatoes" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Red Tomatos</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$1.35/৳160</span>
+                    <span class="blur">$1.85/৳220</span>
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="sale">
+              <p>Sale 50%</p>
+            </div>
+
+
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/Image (9).png" alt="Surjapur Mango" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Surjapur Mango</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$0.60/৳70</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-lock"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOT DEALS END-->
+
+    <!-- SUMMER-->
+    <section class="summer_sale ">
+      <div class="container">
+        <div class="summer">
+          <div class="img">
+            <img src="./assets/images/summer.png" alt="Summer sale promotion">
+          </div>
+          <div class="summer_container">
+            <h4>Summer Sale</h4>
+            <h1><span>37%</span> OFF</h1>
+            <p>
+              Free on all your order, Free Shipping and 30 days money-back
+              guarantee
+            </p>
+            <button type="button" class="d-flex align-items-center justify-content-center" data-shop-now>
+              Shop now
+              <span class="ps-1"><i class="fa-solid fa-arrow-right-long"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SUMMER END-->
+
+    <!-- FEATURED -->
+    <section id="featured-products" class="product-section">
+      <div class="container">
+        <div class="popular_header">
+          <h1>Featured Products</h1>
+          <button>
+            View All
+            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+          </button>
+        </div>
+        <div class="row mt-5 g-3 row-cols-lg-5 row-cols-md-3 row-cols-2">
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products1.png" alt="Green Apple" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Green Apple</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$5/৳618</span>
+                    <span class="blur">$9.99/৳1113</span>
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="sale">
+              <p>Sale 50%</p>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products2.png" alt="Fresh Indian Malta" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Fresh Indian Malta</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$11.00/৳1361</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products3.png" alt="Chinese cabbage" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Chinese cabbage</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$0.65/৳80</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products4.png" alt="Green Lettuce" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Green Lettuce</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$1.23/৳450</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products_box">
+            <div class="products_image">
+              <img src="./assets/images/products5.png" alt="Eggplant" />
+            </div>
+            <div class="products_box_content">
+              <div>
+                <h4>Eggplant</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <span class="bold">$0.84/৳100</span>
+
+                  </div>
+                  <div class="products_cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+                <div class="star">⭐⭐⭐⭐⭐</div>
+              </div>
+            </div>
+            <div class="eye_love">
+              <div class="">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div>
+
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED END-->
+
+    <!-- LATEST-->
+    <section id="latest">
+      <div class="container">
+        <h1 class="Latest_header">Latest News</h1>
+        <div class="row row-cols-lg-3 latest_new_main">
+          <div class="latest_box">
+            <div class="latest_box_image">
+              <img src="./assets/images/latest1.png" alt="Fresh food article" />
+            </div>
+            <div class="latest_content">
+              <div class="Latest_data d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <span><i class="fa-solid fa-tag"></i></span>
+                  <p>Food</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span><i class="fa-solid fa-user-tie"></i></span>
+                  <p>By Admin</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span><i class="fa-solid fa-message"></i></span>
+                  <p>65 Comments</p>
+                </div>
+              </div>
+              <p class="latest_para">
+                Curabitur porttitor orci eget neque accumsan venenatis. Nunc
+                fermentum.
+              </p>
+              <button type="button" data-notice="Article pages are not included in this static demo.">
+                Read more
+                <span class="ps-1"><i class="fa-solid fa-arrow-right-long"></i></span>
+              </button>
+            </div>
+            <div class="calender">
+              <h5>18</h5>
+              <p>Jul</p>
+            </div>
+          </div>
+          <div class="latest_box">
+            <div class="latest_box_image">
+              <img src="./assets/images/latest2.png" alt="Food article" />
+            </div>
+            <div class="latest_content">
+              <div class="Latest_data d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <span><i class="fa-solid fa-tag"></i></span>
+                  <p>Food</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span><i class="fa-solid fa-user-tie"></i></span>
+                  <p>By Admin</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span><i class="fa-solid fa-message"></i></span>
+                  <p>65 Comments</p>
+                </div>
+              </div>
+              <p class="latest_para">
+                Eget lobortis lorem lacinia. Vivamus pharetra semper.
+              </p>
+              <button type="button" data-notice="Article pages are not included in this static demo.">
+                Read more
+                <span class="ps-1"><i class="fa-solid fa-arrow-right-long"></i></span>
+              </button>
+            </div>
+            <div class="calender">
+              <h5>25</h5>
+              <p>Jul</p>
+            </div>
+          </div>
+          <div class="latest_box">
+            <div class="latest_box_image">
+              <img src="./assets/images/latest3.png" alt="Healthy food article" />
+            </div>
+            <div class="latest_content">
+              <div class="Latest_data d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <span><i class="fa-solid fa-tag"></i></span>
+                  <p>Food</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span><i class="fa-solid fa-user-tie"></i></span>
+                  <p>By Admin</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span><i class="fa-solid fa-message"></i></span>
+                  <p>65 Comments</p>
+                </div>
+              </div>
+              <p class="latest_para">
+                Maecenas blandit risus elementum mauris malesuada.
+              </p>
+              <button type="button" data-notice="Article pages are not included in this static demo.">
+                Read more
+                <span class="ps-1"><i class="fa-solid fa-arrow-right-long"></i></span>
+              </button>
+            </div>
+            <div class="calender">
+              <h5>05</h5>
+              <p>Aug</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- LATEST END-->
+
+    <!-- TESTIMONIAL -->
+    <section id="testimonial">
+      <div class="container">
+        <div class="testiv_div d-flex justify-content-between align-items-lg-center">
+          <h1 class="testimonial_header">Client Testimonials</h1>
+          <div class="action">
+            <button type="button" data-testimonial-direction="previous" aria-label="Show previous testimonials"><i
+                class="fa-solid fa-arrow-left-long" aria-hidden="true"></i></button>
+            <button type="button" data-testimonial-direction="next" aria-label="Show next testimonials"><i
+                class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <div class="row row-cols-lg-3 justify-content-between">
+          <div class="review_box">
+            <div class="info"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testi_para">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+              sodales. Donec sed neque eget
+            </p>
+            <div class="user_review d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <img src="./assets/images/review1.png" alt="Robert Fox" />
+                <div>
+                  <p>Akkas Ali</p>
+                  <span>Customer</span>
+                </div>
+              </div>
+              <div>⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <div class="review_box">
+            <div class="info"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testi_para">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+              sodales. Donec sed neque eget
+            </p>
+            <div class="user_review d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <img src="./assets/images/review2.png" alt="Dianne Russell" />
+                <div>
+                  <p>Don Carlo</p>
+                  <span>Customer</span>
+                </div>
+              </div>
+              <div>⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <div class="review_box">
+            <div class="info"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testi_para">
+              Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+              Phasellus imperdiet elit eu magna dictum, bibendum cursus velit
+              sodales. Donec sed neque eget
+            </p>
+            <div class="user_review d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center">
+                <img src="./assets/images/review3.png" alt="Eleanor Pena" />
+                <div>
+                  <p>David Emon</p>
+                  <span>Customer</span>
+                </div>
+              </div>
+              <div>⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TESTIMONIAL END-->
+
+    <!-- Branding -->
+    <section id="branding">
+      <div class="container">
+        <div class="row row-cols-lg-6 row-cols-3 g-0">
+          <div class="branding_content">
+            <img src="./assets/images/branding1.png" alt="Brand partner 1" />
+          </div>
+          <div class="branding_content">
+            <img src="./assets/images/branding2.png" alt="Brand partner 2" />
+          </div>
+          <div class="branding_content">
+            <img src="./assets/images/branding3.png" alt="Brand partner 3" />
+          </div>
+          <div class="branding_content">
+            <img src="./assets/images/branding4.png" alt="Brand partner 4" />
+          </div>
+          <div class="branding_content">
+            <img src="./assets/images/branding5.png" alt="Brand partner 5" />
+          </div>
+          <div class="branding_content">
+            <img src="./assets/images/branding6.png" alt="Brand partner 6" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Branding End-->
+
+
+    <!-- Instagram -->
+    <section id="instagram">
+      <div class="container">
+        <h1 class="instagram_para">Follow us on Instagram</h1>
+        <div class="row row-cols-lg-6 row-cols-2 row-cols-md-3 justify-content-between">
+          <div class="col instagram_container">
+            <div class="instagram_image">
+              <img src="./assets/images/insta1.png" alt="Instagram post 1" />
+            </div>
+            <div class="instagram_icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="col instagram_container">
+            <div class="instagram_image">
+              <img src="./assets/images/insta2.png" alt="Instagram post 2" />
+            </div>
+            <div class="instagram_icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="col instagram_container">
+            <div class="instagram_image">
+              <img src="./assets/images/insta3.png" alt="Instagram post 3" />
+            </div>
+            <div class="instagram_icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="col instagram_container">
+            <div class="instagram_image">
+              <img src="./assets/images/insta4.png" alt="Instagram post 4" />
+            </div>
+            <div class="instagram_icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="col instagram_container">
+            <div class="instagram_image">
+              <img src="./assets/images/insta5.png" alt="Instagram post 5" />
+            </div>
+            <div class="instagram_icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="col instagram_container">
+            <div class="instagram_image">
+              <img src="./assets/images/insta6.png" alt="Instagram post 6" />
+            </div>
+            <div class="instagram_icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Instagram End-->
+
+
+    <!-- CONTACT US -->
+    <section id="contact-us" class="py-5">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Contact Us</h2>
+          <p class="text-muted">
+            We'd love to hear from you. Send us your questions or feedback.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Contact Information -->
+          <div class="col-lg-5">
+
+            <div class="contact-info">
+
+              <div class="info-box">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                  <h5>Address</h5>
+                  <p>New Market, Chattogram, Bangladesh</p>
+                </div>
+
+              </div>
+
+              <div class="info-box">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+                  <h5>Phone</h5>
+                  <p>(+880) 1594753799</p>
+                </div>
+
+              </div>
+
+              <div class="info-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+                  <h5>Email</h5>
+                  <p>support@ecobazar.com</p>
+                </div>
+
+              </div>
+
+              <div class="info-box">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <div>
+                  <h5>Working Hours</h5>
+                  <p>Monday - Saturday<br>9:00 AM - 8:00 PM</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+
+          <div class="col-lg-7">
+
+            <div class="contact-card">
+
+              <form id="contactForm" class="needs-validation" novalidate>
+
+                <div class="row">
+
+                  <div class="col-md-6 mb-3">
+
+                    <label class="form-label">Full Name</label>
+
+                    <input type="text" class="form-control" required>
+
+                    <div class="invalid-feedback">
+                      Please enter your name.
+                    </div>
+
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+
+                    <label class="form-label">Email</label>
+
+                    <input type="email" class="form-control" required>
+
+                    <div class="invalid-feedback">
+                      Please enter a valid email.
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="mb-3">
+
+                  <label class="form-label">Subject</label>
+
+                  <input type="text" class="form-control" required>
+
+                </div>
+
+                <div class="mb-3">
+
+                  <label class="form-label">Message</label>
+
+                  <textarea rows="6" class="form-control" required></textarea>
+
+                  <div class="invalid-feedback">
+                    Please write your message.
+                  </div>
+
+                </div>
+
+                <button class="btn btn-success px-5">
+
+                  <span id="btnText">
+                    Send Message
+                  </span>
+
+                  <span id="spinner" class="spinner-border spinner-border-sm d-none">
+                  </span>
+
+                </button>
+
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT US START -->
+
+    <section id="about-us" class="py-5">
+
+      <div class="container">
+
+        <div class="text-center mb-5">
+
+          <h2 class="section-title">About Ecobazar</h2>
+
+          <p class="section-subtitle">
+            Freshness Delivered, Happiness Guaranteed.
+          </p>
+
+        </div>
+
+        <div class="row align-items-center gy-5">
+
+          <div class="col-lg-6">
+
+            <img src="./assets/images/about.jpg" class="img-fluid rounded-4 shadow" alt="About Ecobazar">
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <h3>Who We Are</h3>
+
+            <p>
+
+              Ecobazar is a modern online grocery platform dedicated to
+              providing fresh vegetables, fruits, bakery items, dairy products,
+              and daily essentials at affordable prices.
+
+            </p>
+
+            <p>
+
+              Our mission is to make grocery shopping simple, fast, and convenient
+              while maintaining the highest quality standards.
+
+            </p>
+
+            <div class="row mt-4">
+
+              <div class="col-6">
+
+                <div class="about-box">
+
+                  <h4>Mission</h4>
+
+                  <p>
+                    Deliver fresh products with quality service.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div class="col-6">
+
+                <div class="about-box">
+
+                  <h4>Vision</h4>
+
+                  <p>
+                    Become the most trusted online grocery platform.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <hr class="my-5">
+
+        <div class="text-center mb-5">
+
+          <h2 class="section-title">
+
+            Meet Our Team
+
+          </h2>
+
+          <p>
+
+            The people behind Ecobazar.
+
+          </p>
+
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Owner 1 -->
+
+          <div class="col-lg-4 col-md-6">
+
+            <div class="team-card">
+
+              <img src="./assets/images/Pic-Rafi.jpeg" class="team-img" alt="Owner">
+
+              <h4>Taki Mahmud Rafi</h4>
+
+              <h6>Founder & Developer</h6>
+
+              <p>
+
+                Designed and developed the Ecobazar website.
+
+              </p>
+
+              <div class="social">
+
+                <a href="https://www.facebook.com/profile.php?id=61579077518615" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="https://www.linkedin.com/in/takimahmudrafi2004/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="https://github.com/tmrafi2004-png" target="_blank"><i class="fab fa-github"></i></a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Owner 2 -->
+
+          <div class="col-lg-4 col-md-6">
+
+            <div class="team-card">
+
+              <img src="./assets/images/JU.jpg" class="team-img" alt="Owner">
+
+              <h4>MD. Junayet Hossien</h4>
+
+              <h6>Founder & Developer</h6>
+
+              <p>
+
+                Designed a beautiful and user-friendly shopping experience.
+
+              </p>
+
+              <div class="social">
+
+                <a href="https://www.facebook.com/profile.php?id=61579077518615" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="https://www.linkedin.com/in/takimahmudrafi2004/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="https://github.com/tmrafi2004-png" target="_blank"><i class="fab fa-github"></i></a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Owner 3 -->
+
+          <div class="col-lg-4 col-md-6 mx-auto">
+
+            <div class="team-card">
+
+              <img src="./assets/images/MU.jpg" class="team-img" alt="Owner">
+
+              <h4>Mojibur Ramen</h4>
+
+              <h6>Founder & Developer</h6>
+
+              <p>
+
+                Responsible for customer engagement and promotions.
+
+              </p>
+
+              <div class="social">
+
+                <a href="https://www.facebook.com/profile.php?id=61579077518615" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="https://www.linkedin.com/in/takimahmudrafi2004/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="https://github.com/tmrafi2004-png" target="_blank"><i class="fab fa-github"></i></a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ABOUT US END -->
+
+    <!-- NEWALETTER -->
+    <section id="newsletter">
+      <div class="container">
+        <div class="row row-cols-lg-2">
+          <div class="subscribe">
+            <h3>Subscribe our Newsletter</h3>
+            <p>
+              Pellentesque eu nibh eget mauris congue mattis mattis nec <br />
+              tellus. Phasellus imperdiet elit eu magna.
+            </p>
+          </div>
+          <div class="form_social d-flex align-items-center">
+            <form data-newsletter-form>
+              <label class="visually-hidden" for="newsletter-email">Email address</label>
+              <input id="newsletter-email" type="email" name="email" placeholder="Your email address"
+                autocomplete="email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+            <div class="social d-flex  ms-5">
+              <span class="ms-2"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="ms-2"><i class="fa-brands fa-twitter"></i></span>
+              <span class="ms-2"><i class="fa-brands fa-pinterest-p"></i></span>
+              <span class="ms-2"><i class="fa-brands fa-instagram"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NEWSLETTER END -->
+
+    <!-- FOOTER -->
+  </main>
+
+  <div class="modal fade" id="product-modal" tabindex="-1" aria-labelledby="product-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="product-modal-title">Product preview</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="product-modal-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+
+    <div class="container">
+
+      <div class="row gy-5">
+
+        <!-- Company -->
+
+        <div class="col-lg-4 col-md-6">
+
+          <img src="./assets/images/LogoFooter.png" alt="Ecobazar Logo" class="img-fluid mb-3">
+
+          <p class="footer_description">
+
+            Fresh groceries delivered to your doorstep.
+            Quality products at affordable prices.
+
+          </p>
+
+          <div class="phone">
+
+            <a href="tel:+8801594753799">
+              (+880) 1594753799
+            </a>
+
+            <span>or</span>
+
+            <a href="mailto:support@ecobazar.com">
+
+              support@ecobazar.com
+
+            </a>
+
+          </div>
+
+          <div class="social-links mt-4">
+
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+          </div>
+
+        </div>
+
+        <!-- Account -->
+
+        <div class="col-lg-2 col-md-6">
+
+          <div class="footer_box">
+
+            <h3>My Account</h3>
+
+            <ul>
+
+              <li><a href="login.html">My Account</a></li>
+
+              <li><a href="login.html">Order History</a></li>
+
+              <li><a href="login.html">Shopping Cart</a></li>
+
+              <li><a href="login.html">Wishlist</a></li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <!-- Help -->
+
+        <div class="col-lg-2 col-md-6">
+
+          <div class="footer_box">
+
+            <h3>Help</h3>
+
+            <ul>
+
+              <li><a href="#contact-us">Contact</a></li>
+
+              <li><a href="help.html#faq">FAQs</a></li>
+
+              <li><a href="help.html#terms">Terms & Conditions</a></li>
+
+              <li><a href="help.html#privacy">Privacy Policy</a></li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <!-- Company -->
+
+        <div class="col-lg-2 col-md-6">
+
+          <div class="footer_box">
+
+            <h3>Company</h3>
+
+            <ul>
+
+              <li><a href="login.html">Track Order</a></li>
+
+              <li><a href="#about-us">About Us</a></li>
+
+              <li><a href="#popular-products">Products</a></li>
+
+              <li><a href="#popular-products">Shop</a></li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <!-- Categories -->
+
+        <div class="col-lg-2 col-md-6">
+
+          <div class="footer_box">
+
+            <h3>Categories</h3>
+
+            <ul>
+
+              <li><a href="#hot-deals">Fruit & Vegetables</a></li>
+
+              <li><a href="#popular-products">Meat & Fish</a></li>
+
+              <li><a href="#popular">Bread & Bakery</a></li>
+
+              <li><a href="#featured-products">Beauty & Health</a></li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="footer-line">
+
+      <div class="footer-bottom">
+
+        <p>
+
+          © 2026 Ecobazar. All Rights Reserved.
+
+        </p>
+
+        <button id="topBtn">
+
+          ↑ Back to Top
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!--BOOTSTRAP JS-->
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
